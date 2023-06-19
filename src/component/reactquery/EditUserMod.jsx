@@ -9,7 +9,9 @@ function EditUserMod(props) {
     const uqclient = useQueryClient();
     const mutution = useMutation(async (edituser) => {
         console.log("edituser", edituser)
-        const result = await fetch(`http://localhost:3001/users/${props.id}`, {
+        // const result =
+            
+        await fetch(`http://localhost:3001/users/${props.id}`, {
             method: 'put',
             headers: {
                 'Accept': "application/json",

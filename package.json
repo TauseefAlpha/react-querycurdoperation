@@ -25,6 +25,9 @@
     "start:server": "json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
+  "rules": {
+  "no-unused-vars": "warn"
+},
     "extends": [
       "react-app",
       "react-app/jest"
